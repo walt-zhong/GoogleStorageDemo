@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "FileManagerDemo"
+include ':FileManager'
+include ':Opendocument'
+include ':Opendoctree'
+include ':ContentproviderPaging'
+include ':Contentproviderpagingkotlin'
+include ':Fileprovider'
+include ':Mediastore'
+include ':XXPermissions'
+include ':Imgpicker'
+include ':ShareStorage'
+include ':ShareStorage:Storageclient'
+include ':ShareStorage:storageprovider'
+include ':ScopedStorage'
+include ':ShareingShortCuts'

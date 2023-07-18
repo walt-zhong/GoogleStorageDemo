@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="18" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ContentproviderPaging" />
+            <option value="$PROJECT_DIR$/Contentproviderpagingkotlin" />
+            <option value="$PROJECT_DIR$/FileManager" />
+            <option value="$PROJECT_DIR$/Fileprovider" />
+            <option value="$PROJECT_DIR$/Imgpicker" />
+            <option value="$PROJECT_DIR$/Mediastore" />
+            <option value="$PROJECT_DIR$/Opendoctree" />
+            <option value="$PROJECT_DIR$/Opendocument" />
+            <option value="$PROJECT_DIR$/ScopedStorage" />
+            <option value="$PROJECT_DIR$/ShareStorage" />
+            <option value="$PROJECT_DIR$/ShareStorage/Storageclient" />
+            <option value="$PROJECT_DIR$/ShareStorage/storageprovider" />
+            <option value="$PROJECT_DIR$/ShareingShortCuts" />
+            <option value="$PROJECT_DIR$/XXPermissions" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

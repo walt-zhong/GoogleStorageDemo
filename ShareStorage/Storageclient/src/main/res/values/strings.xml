@@ -1,0 +1,4 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">StorageClient</string>
+    <string name="sample_action" tools:ignore="ExtraTranslation">Show Me The Image</string>
+</resources>

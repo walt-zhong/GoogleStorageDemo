@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyAppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--BEGIN_INCLUDE(provider_manifest)-->
+        <!--
+        Declare the document provider class MyCloudProvider to the system.  The MANAGE_DOCUMENTS
+        permission belongs only to the Android system, ensuring this provider will never be used
+        directly by another app.  The provider must grant URI permissions in order to expose the
+        specific documents(s) chosen, while not sharing all of its data by default.  It must be
+        exported to be visible outside the application, and it must include a filter with the intent
+        "android.content.action.DOCUMENTS_PROVIDER" in order to be shown in the system document
+        picker UI.
+        -->
+        <provider
+            android:name=".MyCloudProvider"
+            android:authorities="com.example.android.storageprovider.documents"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            android:permission="android.permission.MANAGE_DOCUMENTS">
+            <intent-filter>
+                <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
+            </intent-filter>
+        </provider>
+        <!--END_INCLUDE(provider_manifest)-->
+    </application>
+
+</manifest>
